@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_17">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="oracle.eclipse.tools.glassfish.lib.system">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="D:/Development/glassfish3.1/glassfish3/glassfish/modules/glassfish-api.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="http://docs.oracle.com/javaee/6/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Thomas/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar" sourcepath="C:/Users/Thomas/.m2/repository/javax/inject/javax.inject/1/javax.inject-1-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+			<attribute name="maven.groupId" value="javax.inject"/>
+			<attribute name="maven.artifactId" value="javax.inject"/>
+			<attribute name="maven.version" value="1"/>
+			<attribute name="maven.scope" value="provided"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Thomas/.m2/repository/javax/javaee-web-api/6.0/javaee-web-api-6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Thomas/.m2/repository/org/primefaces/primefaces/3.5/primefaces-3.5.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
