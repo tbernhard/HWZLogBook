@@ -18,7 +18,7 @@ public class User
 
     public String getUsername()
     {
-    	return this.currentUser.getName();
+    	return this.currentUser.toString();
     }
     
     public Principal getCurrentUser()

@@ -12,10 +12,46 @@
 </h:head>
 
 <h:body>
-  Hallo, ${User.currentUser}
-      
+  Hallo, ${user.currentUser}
+     
   <h:form>
-    <h:commandButton action="#{User.logout}" value="logout" />
+    <h:commandButton action="#{user.logout}" value="logout" />
   </h:form>
+    
+   
+<!--   <p:growl id="growl" globalOnly="true" /> -->
+
+<!--   <p:outputPanel rendered="#{user.currentUser == null}"> -->
+<!--     <h:form> -->
+<!--       <h:outputLabel value="Username: " for="usernameTxt" /> -->
+<!--       <p:inputText id="usernameTxt" value="#{userBean.newUser.username}" /> -->
+<!--       <p:message for="usernameTxt" /> -->
+<!--       <p:commandButton value="Create user" -->
+<!--         action="#{userBean.createUser()}" update="@all" /> -->
+<!--     </h:form> -->
+<!--   </p:outputPanel> -->
+
+<!--   <p:outputPanel rendered="#{user.currentUser != null}"> -->
+<!--     <p:outputPanel id="posts"> -->
+<!--       <p:dataTable value="#{sessionBean.currentUser.posts}" var="post" -->
+<!--         sortBy="#{post.date}"> -->
+<!--         <p:column headerText="Date"> -->
+<!--           <h:outputText value="#{post.date}"> -->
+<!--             <f:convertDateTime /> -->
+<!--           </h:outputText> -->
+<!--         </p:column> -->
+<!--         <p:column headerText="Text"> -->
+<!--           <h:outputText value="#{post.text}" /> -->
+<!--         </p:column> -->
+<!--       </p:dataTable> -->
+<!--     </p:outputPanel> -->
+<!--     <h:form> -->
+<!--       <p:inputTextarea id="post" value="#{postBean.newPost.text}" /> -->
+<!--       <p:message for="post" /> -->
+<!--       <p:commandButton value="Post" action="#{postBean.createPost()}" -->
+<!--         update=":posts, :growl" /> -->
+<!--     </h:form> -->
+<!--   </p:outputPanel> -->
+  
 </h:body>
 </html>
