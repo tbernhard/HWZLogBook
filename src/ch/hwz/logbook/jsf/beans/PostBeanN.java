@@ -24,17 +24,6 @@ public class PostBeanN implements Serializable{
 	@Resource(name="jdbc/HwzLogBook")
 	private DataSource ds;
  
-	//if resource injection is not support, you still can get it manually.
-//	public CustomerBean(){
-//		try {
-//			Context ctx = new InitialContext();
-//			ds = (DataSource)ctx.lookup("java:comp/env/jdbc/mkyongdb");
-//		} catch (NamingException e) {
-//			e.printStackTrace();
-//		}
-// 
-//	}
- 
 	//connect to DB and get customer list
 	public List<Post> getPostList() throws SQLException{
  

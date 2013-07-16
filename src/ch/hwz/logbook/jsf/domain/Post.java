@@ -4,19 +4,40 @@ import java.util.Date;
 
 import javax.validation.constraints.Size;
 
-/**
- * A simple data class representing a post.
- * 
- * @author Siebe Joris Jochems
- * 
- */
 public class Post
 {
-    @Size(min = 2, max = 120)
+    private String user;
+    private Long postID;
+    private String title;
+	@Size(min = 2, max = 120)
     private String text;
     private Date date;
 
-    /**
+    public String getUser() {
+		return user;
+	}
+
+	public void setUser(String user) {
+		this.user = user;
+	}
+
+	public Long getPostID() {
+		return postID;
+	}
+
+	public void setPostID(Long postID) {
+		this.postID = postID;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	/**
      * @return the actual text of this {@link Post}.
      */
     public String getText()
