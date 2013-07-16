@@ -1,8 +1,6 @@
 package ch.hwz.logbook.jsf.domain;
 
 import java.security.Principal;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
@@ -14,7 +12,6 @@ public class User
 	@Inject
 	private Principal currentUser;
 	
-    private List<Post> posts = new ArrayList<Post>();
 
     public String getUsername()
     {
@@ -32,8 +29,4 @@ public class User
       return "/index.xhtml?faces-redirect=true";
     }
 
-    public List<Post> getPosts()
-    {
-        return posts;
-    }
 }
