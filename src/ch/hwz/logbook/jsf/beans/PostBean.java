@@ -12,7 +12,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.sql.DataSource;
 
-import ch.hwz.logbook.jsf.model.Post;
+import ch.hwz.logbook.jsf.model.PostPOJO;
 
 @ManagedBean(name = "postBeanN")
 @SessionScoped
@@ -23,7 +23,7 @@ public class PostBean {
 	private DataSource ds;
 
 	// connect to DB and get customer list
-	public List<Post> getPostList() throws SQLException {
+	public List<PostPOJO> getPostList() throws SQLException {
 
 		if (ds == null)
 			throw new SQLException("Can't get data source");
@@ -39,11 +39,11 @@ public class PostBean {
 		// get customer data from database
 		ResultSet result = ps.executeQuery();
 
-		List<Post> list = new ArrayList<Post>();
+		List<PostPOJO> list = new ArrayList<PostPOJO>();
 
 		while (result.next()) {
 
-			Post p = new Post();
+			PostPOJO p = new PostPOJO();
 
 			p.setPostID(result.getLong("postID"));
 			p.setUser(result.getString("user"));
