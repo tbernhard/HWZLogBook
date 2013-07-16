@@ -29,5 +29,6 @@
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="C:/Users/Thomas/.m2/repository/javax/javaee-web-api/6.0/javaee-web-api-6.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/Thomas/.m2/repository/org/primefaces/primefaces/3.5/primefaces-3.5.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.datatools.connectivity.jdt.DRIVERLIBRARY/MySQL JDBC Driver"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

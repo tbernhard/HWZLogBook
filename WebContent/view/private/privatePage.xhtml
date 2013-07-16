@@ -1,57 +1,61 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:ui="http://java.sun.com/jsf/facelets"
-  xmlns:f="http://java.sun.com/jsf/core"
-  xmlns:h="http://java.sun.com/jsf/html"
-  xmlns:p="http://primefaces.org/ui">
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
 
 <h:head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <h:outputStylesheet library="css" name="bootstrap.css" />
-  <title>HWZ Log Book Inside</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<h:outputStylesheet library="css" name="bootstrap.css" />
+	<title>HWZ Log Book Inside</title>
 </h:head>
 
 <h:body>
   Hallo, ${user.currentUser}
      
-  <h:form>
-    <h:commandButton action="#{user.logout}" value="logout" />
-  </h:form>
-    
-   
-<!--   <p:growl id="growl" globalOnly="true" /> -->
+    <h:panelGrid columns="2">
+	<h:outputLink value="hwzlbook.xhtml">JPA</h:outputLink>
+  	</h:panelGrid>
 
-<!--   <p:outputPanel rendered="#{user.currentUser == null}"> -->
-<!--     <h:form> -->
-<!--       <h:outputLabel value="Username: " for="usernameTxt" /> -->
-<!--       <p:inputText id="usernameTxt" value="#{userBean.newUser.username}" /> -->
-<!--       <p:message for="usernameTxt" /> -->
-<!--       <p:commandButton value="Create user" -->
-<!--         action="#{userBean.createUser()}" update="@all" /> -->
-<!--     </h:form> -->
-<!--   </p:outputPanel> -->
+	<h:form>
+		<h:commandButton action="#{user.logout}" value="logout" />
+	</h:form>
 
-<!--   <p:outputPanel rendered="#{user.currentUser != null}"> -->
-<!--     <p:outputPanel id="posts"> -->
-<!--       <p:dataTable value="#{sessionBean.currentUser.posts}" var="post" -->
-<!--         sortBy="#{post.date}"> -->
-<!--         <p:column headerText="Date"> -->
-<!--           <h:outputText value="#{post.date}"> -->
-<!--             <f:convertDateTime /> -->
-<!--           </h:outputText> -->
-<!--         </p:column> -->
-<!--         <p:column headerText="Text"> -->
-<!--           <h:outputText value="#{post.text}" /> -->
-<!--         </p:column> -->
-<!--       </p:dataTable> -->
-<!--     </p:outputPanel> -->
-<!--     <h:form> -->
-<!--       <p:inputTextarea id="post" value="#{postBean.newPost.text}" /> -->
-<!--       <p:message for="post" /> -->
-<!--       <p:commandButton value="Post" action="#{postBean.createPost()}" -->
-<!--         update=":posts, :growl" /> -->
-<!--     </h:form> -->
-<!--   </p:outputPanel> -->
-  
+
+	<!--   <p:growl id="growl" globalOnly="true" /> -->
+
+	<!--   <p:outputPanel rendered="#{user.currentUser == null}"> -->
+	<!--     <h:form> -->
+	<!--       <h:outputLabel value="Username: " for="usernameTxt" /> -->
+	<!--       <p:inputText id="usernameTxt" value="#{userBean.newUser.username}" /> -->
+	<!--       <p:message for="usernameTxt" /> -->
+	<!--       <p:commandButton value="Create user" -->
+	<!--         action="#{userBean.createUser()}" update="@all" /> -->
+	<!--     </h:form> -->
+	<!--   </p:outputPanel> -->
+
+	<!--   <p:outputPanel rendered="#{user.currentUser != null}"> -->
+	<!--     <p:outputPanel id="posts"> -->
+	<!--       <p:dataTable value="#{sessionBean.currentUser.posts}" var="post" -->
+	<!--         sortBy="#{post.date}"> -->
+	<!--         <p:column headerText="Date"> -->
+	<!--           <h:outputText value="#{post.date}"> -->
+	<!--             <f:convertDateTime /> -->
+	<!--           </h:outputText> -->
+	<!--         </p:column> -->
+	<!--         <p:column headerText="Text"> -->
+	<!--           <h:outputText value="#{post.text}" /> -->
+	<!--         </p:column> -->
+	<!--       </p:dataTable> -->
+	<!--     </p:outputPanel> -->
+	<!--     <h:form> -->
+	<!--       <p:inputTextarea id="post" value="#{postBean.newPost.text}" /> -->
+	<!--       <p:message for="post" /> -->
+	<!--       <p:commandButton value="Post" action="#{postBean.createPost()}" -->
+	<!--         update=":posts, :growl" /> -->
+	<!--     </h:form> -->
+	<!--   </p:outputPanel> -->
+
 </h:body>
 </html>
