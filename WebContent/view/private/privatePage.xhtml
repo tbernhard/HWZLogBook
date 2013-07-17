@@ -15,8 +15,11 @@
   Hallo, ${user.currentUser}
      
     <h:panelGrid columns="2">
-	<h:outputLink value="hwzlbook.xhtml">JPA</h:outputLink>
+	<h:outputLink value="hwzlbook.xhtml">View</h:outputLink>
   	</h:panelGrid>
+  	<h:panelGrid columns="2">
+		<h:outputLink value="hwzlogadd.xhtml">Add</h:outputLink>
+	</h:panelGrid>
 
 	<h:form>
 		<h:commandButton action="#{user.logout}" value="logout" />
